@@ -1,0 +1,4 @@
+memo/
+*.pyc
+*~
+*.DS_Store
