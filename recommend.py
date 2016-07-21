@@ -134,8 +134,8 @@ if __name__ == '__main__':
     print(' Processing now...')
 
     # NMF で行列分解
-    # 計算時間と精度を考え、ひとまず f_dim = , iteration = 100
-    user_mat, item_mat, loss = trainNMF(UxI_data, f_dim=100, max_ite=100)
+    # 計算時間と精度を考え、ひとまず f_dim = 150, iteration = 100
+    user_mat, item_mat, loss = trainNMF(UxI_data, f_dim=150, max_ite=100)
 
     # 類似度の算出
     user_sim = user_mat.dot(user_mat.T) # ユーザx特徴量の内積(対称行列)
